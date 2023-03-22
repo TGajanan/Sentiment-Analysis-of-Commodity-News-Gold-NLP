@@ -1,0 +1,5 @@
+ibm_db
+Flask
+NewsApiClient
+pickle
+requests
