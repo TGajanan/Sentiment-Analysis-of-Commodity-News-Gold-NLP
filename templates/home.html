@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gold Price Prediction</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+  </head>
+  <body>
+    <!-- <div style="opacity: 1;" class="jsx-203082185 ttape-inner d-flex-row"><div class="jsx-3889711638 ticker-item-root pointer relative " data-pos="10" style="transform: translate3d(1851px, 0px, 0px); transition-duration: 0s; opacity: 1;"><span class="jsx-3889711638 symbol nowrap">NIFTY 50</span><span class="jsx-3889711638 price">17,944.20</span><i class="jsx-3889711638 icon-price-down"></i><span class="jsx-3889711638 change down">0.51%</span></div><div class="jsx-3889711638 ticker-item-root pointer relative " data-pos="11" style="transform: translate3d(2071px, 0px, 0px); transition-duration: 0s; opacity: 1;"><span class="jsx-3889711638 symbol nowrap">NIFTY BANK</span><span class="jsx-3889711638 price">41,131.75</span><i class="jsx-3889711638 icon-price-down"></i><span class="jsx-3889711638 change down">1.20%</span></div><div class="jsx-3889711638 ticker-item-root pointer relative " data-pos="0" style="transform: translate3d(-227px, 0px, 0px); transition-duration: 0s; opacity: 1;"><span class="jsx-3889711638 symbol nowrap">BAJFINANCE</span><span class="jsx-3889711638 price">6,416.70</span><i class="jsx-3889711638 icon-price-down"></i><span class="jsx-3889711638 change down">0.32%</span></div><div class="jsx-3889711638 ticker-item-root pointer relative " data-pos="1" style="transform: translate3d(13px, 0px, 0px); transition-duration: 0s; opacity: 1;"><span class="jsx-3889711638 symbol nowrap">BHARTIARTL</span><span class="jsx-3889711638 price">776.80</span><i class="jsx-3889711638 icon-price-down"></i><span class="jsx-3889711638 change down">0.98%</span></div><div class="jsx-3889711638 ticker-item-root pointer relative " data-pos="2" style="transform: translate3d(240px, 0px, 0px); transition-duration: 0s; opacity: 1;"><span class="jsx-3889711638 symbol nowrap">HDFCBANK</span><span class="jsx-3889711638 price">1,655.90</span><i class="jsx-3889711638 icon-price-down"></i><span class="jsx-3889711638 change down">0.50%</span></div><div class="jsx-3889711638 ticker-item-root pointer relative " data-pos="3" style="transform: translate3d(470px, 0px, 0px); transition-duration: 0s; opacity: 1;"><span class="jsx-3889711638 symbol nowrap">HINDUNILVR</span><span class="jsx-3889711638 price">2,515.50</span><i class="jsx-3889711638 icon-price-down"></i><span class="jsx-3889711638 change down">0.46%</span></div><div class="jsx-3889711638 ticker-item-root pointer relative " data-pos="4" style="transform: translate3d(709px, 0px, 0px); transition-duration: 0s; opacity: 1;"><span class="jsx-3889711638 symbol nowrap">INDIGO</span><span class="jsx-3889711638 price">1,882.20</span><i class="jsx-3889711638 icon-price-down"></i><span class="jsx-3889711638 change down">0.79%</span></div><div class="jsx-3889711638 ticker-item-root pointer relative " data-pos="5" style="transform: translate3d(913px, 0px, 0px); transition-duration: 0s; opacity: 1;"><span class="jsx-3889711638 symbol nowrap">ITC</span><span class="jsx-3889711638 price">383.40</span><i class="jsx-3889711638 icon-price-up"></i><span class="jsx-3889711638 change up">0.22%</span></div><div class="jsx-3889711638 ticker-item-root pointer relative " data-pos="6" style="transform: translate3d(1073px, 0px, 0px); transition-duration: 0s; opacity: 1;"><span class="jsx-3889711638 symbol nowrap">MARUTI</span><span class="jsx-3889711638 price">8,807.75</span><i class="jsx-3889711638 icon-price-up"></i><span class="jsx-3889711638 change up">0.03%</span></div><div class="jsx-3889711638 ticker-item-root pointer relative " data-pos="7" style="transform: translate3d(1279px, 0px, 0px); transition-duration: 0s; opacity: 1;"><span class="jsx-3889711638 symbol nowrap">RELIANCE</span><span class="jsx-3889711638 price">2,440.20</span><i class="jsx-3889711638 icon-price-up"></i><span class="jsx-3889711638 change up">0.42%</span></div><div class="jsx-3889711638 ticker-item-root pointer relative " data-pos="8" style="transform: translate3d(1501px, 0px, 0px); transition-duration: 0s; opacity: 1;"><span class="jsx-3889711638 symbol nowrap">SBIN</span><span class="jsx-3889711638 price">531.00</span><i class="jsx-3889711638 icon-price-down"></i><span class="jsx-3889711638 change down">1.68%</span></div><div class="jsx-3889711638 ticker-item-root pointer relative " data-pos="9" style="transform: translate3d(1672px, 0px, 0px); opacity: 1; transition-duration: 0s;"><span class="jsx-3889711638 symbol nowrap">TCS</span><span class="jsx-3889711638 price">3,501.15</span><i class="jsx-3889711638 icon-price-down"></i><span class="jsx-3889711638 change down">1.60%</span></div></div> -->
+
+    <!-- {% if input == 0 %}
+    <script>
+        alert("Please Add News title Headline and try to submit");
+    </script>
+    {% endif %} -->
+    <header>
+      <h1>Gold Price Prediction</h1>
+    </header>
+    <main>
+      <form action="/" method="POST" onsubmit="return submitForm(this)">  
+        <label for="text">Add News title Headline:</label>
+        <input type="text" id="text" name="newheadline">
+        <br><br>
+        <button type="submit" value="Predict">Submit</button>
+      </form>
+      <br><br>
+      <div id="output">
+        <p>The predicted gold price is:{{output}}</p>
+      </div>
+    </main>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <script>
+        function submitForm(form) {
+            swal("{{output}}");
+        
+    }
+    </script>
+    
+
+  </body>
+</html>
